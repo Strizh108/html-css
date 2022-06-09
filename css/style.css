@@ -52,3 +52,45 @@ body {
   top: 15px;
   left: 15px;
 }
+
+/* Pseudo */
+
+.pseudo-title {
+  margin: 0;
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+}
+
+.pseudo-title::before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+
+  background-color: #d21727;
+
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  margin-left: -50px;
+}
+
+.pseudo-title::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  margin: 5px auto;
+
+  background-color: #2344bd;
+}
+
+.pseudo-text p::first-letter {
+  font-size: 20px;
+}
+
+.pseudo-text p::first-line {
+  color: #d21727;
+  font-style: italic;
+}
